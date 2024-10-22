@@ -28,7 +28,7 @@
     display: flex;
     width: 80%;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
   }
   .todo-edit-container{
     width: 50%;
