@@ -1,0 +1,70 @@
+.app-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 10dvh;
+    color: #213547;
+    background-color: #ffff;
+    padding:10px;
+    margin-block:10px;
+    border-radius: 10px;
+}
+nav{
+    display: flex;
+    gap: 10px;
+}
+.app-header a{
+    font-weight: 400;
+    padding: 1em;
+    border-radius: 10px;
+}
+.app-header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+.app-header a.active{
+    background-color: var( --clr1bg);
+    color: var(--gray1);
+    font-weight: bold;
+
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+    background: var(--clr1);
+    color: white;
+    padding: 2px;
+    width: 90px;
+    height: 70px;
+    overflow: hidden;
+    transition: width 0.5s ease-in-out; /* Transition for the width change */
+  }
+  
+  .logo {
+    width: 70px;
+    height: 70px;
+  }
+  
+  /* Initially hide the text */
+  .logo-text {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out; 
+    font-size: 16px;
+  }
+  
+  /* On hover, expand the container and show the text */
+  .logo-container:hover {
+    width: 200px; /* Expand container to 200px */
+  }
+  
+  .logo-container:hover .logo-text {
+    display: inline;
+    opacity: 1; /* Fade-in effect */
+  }

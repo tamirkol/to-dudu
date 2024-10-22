@@ -1,0 +1,51 @@
+
+.todo-functions-container {
+    display: flex;
+    justify-content: space-between;
+}
+.todo-functions{
+    background: white;
+    border-radius: 10px;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    height: 50px;
+    cursor: pointer;
+
+
+}
+.todo-functions input{
+    height: 30px;
+    border: none;
+}
+.todo-functions:hover{
+    background-color: var(--clr1bg-light);
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: var(--clr1bg);
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+ .loader-container{
+    position: absolute;
+    bottom: 60%;
+    left: 50%;
+
+ }

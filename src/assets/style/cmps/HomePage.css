@@ -1,0 +1,34 @@
+.home-page {
+    background: white;
+    border-radius: 10px;
+    padding: 1em;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .content-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  img {
+    width: 300px;
+  }
+  
+  /* Animation styles */
+  .animate {
+    transform: translateY(20px); /* Start from below */
+    opacity: 0; /* Start invisible */
+    animation: slide-up 0.5s forwards; /* Animation properties */
+  }
+  
+  /* Keyframes for slide-up animation */
+  @keyframes slide-up {
+    to {
+      transform: translateY(0); /* End at original position */
+      opacity: 1; /* Fade in */
+    }
+  }
+  

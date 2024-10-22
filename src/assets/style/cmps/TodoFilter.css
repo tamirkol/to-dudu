@@ -1,0 +1,41 @@
+.filter-svg{
+    width:20px;
+    display:flex;
+    align-items: center;
+}
+
+.todo-filter{
+    display: flex;
+    flex-direction: column;
+    gap:70px;
+}
+.filter-input-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.filter-input-wrapper input{
+    height: 30px;
+}
+label{
+    font-weight: 500;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray; 
+    border-radius: 3px;
+}
+.search :focus{
+
+}
+.search > input{
+ border: none;
+}
+.search input:focus{
+    outline: none;
+    border: none;
+   }
